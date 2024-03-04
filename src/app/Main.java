@@ -2,8 +2,8 @@ package app;
 
 import java.util.Locale;
 
+import service.BrazilInterestService;
 import service.InterestService;
-import service.USAInterestService;
 
 public class Main {
 
@@ -14,7 +14,7 @@ public class Main {
 		double amount = 200.0;
 		int month = 3;
 
-		InterestService bis = new USAInterestService(1.0);
+		InterestService bis = new BrazilInterestService(2.0);
 
 		double totalPayment = bis.payment(amount, month);
 
